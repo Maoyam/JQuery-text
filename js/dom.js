@@ -1,19 +1,11 @@
 $(function() {
-  let num = 0;
+// id属性がshowの要素がクリックされたら要素を表示
+$('#show').on('click', function(){
+  $('ul').show();
+});
 
- $('#append').on('click', function(){
-  num++;
-  $('ul').append('<li>appendで追加' + num + '</li>');
- });
-
- $('#remove').on('click', function() {
-  // 追加した分だけ削除するための準備
-  num--;
-  $('li:last').remove();
-
-  要素がなくなったら変数を0にする
-  if(num < 0){
-    num = 0;
-  }
- });
+// id属性がhideの要素がクリックされたら要素を非表示
+$('#hide').on('click', function(){
+  $('ul').hide();
+});
 });
