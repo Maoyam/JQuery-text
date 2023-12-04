@@ -1,3 +1,8 @@
 $(function() {
- $('p').text('jQueryを勉強しよう');
+  let num = 0;
+
+ $('#append').on('click', function(){
+  num++;
+  $('ul').append('<li>appendで追加' + num + '</li>');
+ });
 });
