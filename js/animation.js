@@ -1,14 +1,21 @@
 $(function () {
+  $('#fadeOut').on('click', () => {
+    // 不透明度を0にする(フェードアウトする)
+    $('.box').css('opacity', 0);
+  });
+  $('#fadeIn').on('click', () => {
+// 不透明度を１にする(フェードインする)
+    $('.box').css('opacity', 1);
+  })
 
   $('#slideUp').on('click', () => {
-    $('.box').slideUp();
+    // 高さを0にする(スライドアップする)
+    $('.box').css('height', 0);
   });
 
   $('#slideDown').on('click', () => {
-    $('.box').slideDown();
+    // 高さを200にする(スライドダウンする)
+    $('.box').css('height', 200);
   });
 
-  $('#slideToggle').on('click', () => {
-    $('.box').slideToggle();
-  });
   });
