@@ -1,7 +1,14 @@
 $(function () {
-// idがfadeToggleの要素がクリックされたら
-$('#fadeTaggle').on('click', function() {
-  // フェードイン or フェードアウトする
-  $('.box').fadeToggle();
-})
+
+  $('#slideUp').on('click', () => {
+    $('.box').slideUp();
+  });
+
+  $('#slideDown').on('click', () => {
+    $('.box').slideDown();
+  });
+
+  $('#slideToggle').on('click', () => {
+    $('.box').slideToggle();
+  });
   });
